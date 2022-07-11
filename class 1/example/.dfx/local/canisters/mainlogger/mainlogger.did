@@ -1,0 +1,12 @@
+type View = 
+ record {
+   messages: vec text;
+   start_index: nat;
+ };
+type MainLogger = 
+ service {
+   append: (vec text) -> (text);
+   newLogger: () -> ();
+   view: (nat, nat) -> (View);
+ };
+service : () -> MainLogger

@@ -1,0 +1,22 @@
+{
+  "canisters": {
+    "logger": {
+      "main": "TextLogger.mo",
+      "type": "motoko"
+    },
+    "mainlogger": {
+      "main": "MainLogger.mo",
+      "type": "motoko"
+    },
+    "sublogger": {
+      "main": "SubLogger.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "vessel sources"
+    }
+  }
+}
